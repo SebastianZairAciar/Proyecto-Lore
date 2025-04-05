@@ -20,7 +20,7 @@
 
 
 // 🔹 NUEVO: Obtener reseñas desde PHP
-fetch("https://2e79-2800-810-598-835e-e85d-8de4-d228-dcc6.ngrok-free.app/Emprendimiento/resenas.php")  // Se agregó esta línea para llamar al PHP
+fetch("https://8559-2800-810-598-835e-e85d-8de4-d228-dcc6.ngrok-free.app/Emprendimiento/resenas.php")  // Se agregó esta línea para llamar al PHP
 .then(response => response.json())  // Convertir la respuesta en JSON
 .then(data => {  // Se agregó la función para manejar los datos
     const reviewContainer = document.querySelector(".Carrusel_Reseñas ul");  // Se selecciona el contenedor donde van las reseñas
@@ -73,7 +73,7 @@ document.getElementById("submit-review").addEventListener("click", function () {
     document.querySelector(".Reseñas").prepend(newReview);
   
     // Enviar la reseña al servidor para que se guarde en la base de datos
-    fetch("https://2e79-2800-810-598-835e-e85d-8de4-d228-dcc6.ngrok-free.app/Emprendimiento/resenas.php", {
+    fetch("https://8559-2800-810-598-835e-e85d-8de4-d228-dcc6.ngrok-free.app/Emprendimiento/resenas.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
